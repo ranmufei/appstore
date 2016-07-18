@@ -1,0 +1,19 @@
+databases:
+  environment:
+    MYSQL_ROOT_PASSWORD: feifei
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: local.03in.com:5000/mariadb
+  stdin_open: true
+base:
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: local.03in.com:5000/php:v9
+  links:
+  - databases:mysql
+  privileged: true
+  volumes:
+  - /home/www/maindata:/app/web
+  stdin_open: true

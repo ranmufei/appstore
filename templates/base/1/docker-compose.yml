@@ -1,0 +1,39 @@
+IM:
+  ports:
+  - 9999:9999/tcp
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: local.03in.com:5000/linksame.ims:v1
+  stdin_open: true
+databases:
+  environment:
+    MYSQL_ROOT_PASSWORD: ^%cqsyy@#1xyd2xsyc6z
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: local.03in.com:5000/mariadb
+  volumes:
+  - /home/database/www-apps-com:/var/lib/mysql
+  stdin_open: true
+base:
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: local.03in.com:5000/php:v9
+  links:
+  - databases:mysql
+  privileged: true
+  volumes:
+  - /home/www/maindata:/app/web
+  stdin_open: true
+phpmyadmin:
+  ports:
+  - 8383:80/tcp
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: php-phpmyadmin:v1.0.1
+  links:
+  - databases:mysql
+  stdin_open: true

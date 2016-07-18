@@ -1,0 +1,5 @@
+name: Mariadb
+description: |
+  数据库 mariadb
+version: 10.0.+
+category: 架构

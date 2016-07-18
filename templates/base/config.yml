@@ -1,0 +1,5 @@
+name: linksame PCD base
+description: |
+  PCD 版 基础镜像  包含 ，base镜像 和 数据库镜像
+version: 7.1
+category: 架构

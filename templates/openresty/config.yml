@@ -1,0 +1,8 @@
+name: openResty
+description: |
+  Nginx+lua 执行环境。 基础架构 入口镜像  。 切记下面的数据卷路劲 ，早宿主主机上面要先存在基础环境配置 ；代码目录；Lua 开发代码
+  - /home/www/maindata/openresty/conf:/opt/openresty/nginx/conf
+  - /home/www/maindata/openresty/html:/opt/openresty/nginx/html
+  - /home/www/maindata/openresty/ngxluadev:/opt/openresty/ngxluadev
+version: 7.0
+category: 架构

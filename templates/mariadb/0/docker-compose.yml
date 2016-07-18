@@ -1,0 +1,10 @@
+databases:
+  environment:
+    MYSQL_ROOT_PASSWORD: feifei
+    MYSQL_ROOT_USER:${MYSQL_ROOT_USER}
+    MYSQL_ROOT_DB:${MYSQL_ROOT_DB}
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: local.03in.com:5000/mariadb:latest
+  stdin_open: true

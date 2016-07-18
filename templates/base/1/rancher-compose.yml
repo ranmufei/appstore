@@ -1,0 +1,7 @@
+.catalog:
+  name: "main"
+  version: "7.1"
+  description: "main base imfo"
+  uuid: odoo-0
+  questions:
+

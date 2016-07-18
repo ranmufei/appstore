@@ -1,0 +1,11 @@
+.catalog:
+  name: "nginxLuaDev"
+  version: "v7.1"
+  description: "test"
+  questions:
+    - variable: "test"
+      label: "test"
+      description: "ttt"
+      type: "string"
+      required: false
+

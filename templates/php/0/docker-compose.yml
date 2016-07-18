@@ -1,0 +1,11 @@
+base:
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: local.03in.com:5000/php:v9
+  links:
+  - databases:mysql
+  privileged: true
+  volumes:
+  - /home/www/maindata:/app/web
+  stdin_open: true

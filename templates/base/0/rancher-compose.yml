@@ -1,0 +1,7 @@
+.catalog:
+  name: "jaigou"
+  version: "7.0"
+  description: "base iamge"
+  uuid: odoo-0
+  questions:
+

@@ -1,0 +1,5 @@
+name: ngrok
+description: |
+  自定义被隐射的端口，自定义二级域名；默认对外的都是 XX.03in.com:8082
+version: 7.0
+category: 架构

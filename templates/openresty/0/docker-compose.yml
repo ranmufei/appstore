@@ -1,0 +1,12 @@
+nginxLua:
+  ports:
+  - 8086:80/tcp
+  tty: true
+  image: local.03in.com:5000/openresty:latest
+  privileged: true
+  volumes:
+  - /home/www/maindata/openresty/conf:/opt/openresty/nginx/conf
+  - /home/www/maindata/openresty/html:/opt/openresty/nginx/html
+  - /home/www/maindata/openresty/ngxluadev:/opt/openresty/ngxluadev
+  - /home/www/maindata/openresty/logs/error.log:/opt/openresty/nginx/logs/error.log
+  stdin_open: true

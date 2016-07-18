@@ -1,0 +1,10 @@
+ngrok:
+  environment:
+    PORT: ${PORT}
+    SUBDOMAIN: ${SUBDOMAIN}
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: hub.03in.com:5000/centos7/ngrok:v1
+  stdin_open: true
+  net: host

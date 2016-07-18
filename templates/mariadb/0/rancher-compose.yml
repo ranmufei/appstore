@@ -1,0 +1,6 @@
+.catalog:
+  name: "mariadb"
+  version: "10.+"
+  description: "数据库"
+  uuid: odoo-0
+  questions:

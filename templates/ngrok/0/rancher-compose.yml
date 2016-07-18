@@ -1,0 +1,18 @@
+.catalog:
+  name: "ngrok"
+  version: "7.0"
+  description: "base iamge"
+  uuid: odoo-0
+  questions:
+    - variable: PORT
+      description: "this port is open port"
+      label: "open port"
+      type: "int"
+      required: true
+      default: "80"
+    - variable: SUBDOMAIN
+      description: "please input a domian"
+      label: "SubDomian"
+      type: "string"
+      required: true
+      default: "www"
